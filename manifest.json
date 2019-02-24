@@ -1,0 +1,18 @@
+{
+	"description": "how are you  i am workshop on web extension in msu" , 
+	 "manifest_version": 2,
+	 "name" : "borderify",
+	 "version":"1.0" ,	 
+
+     "icons" :
+     {
+	    "48":"icons/download.jpg"
+	 },
+   "content_scripts" :[
+    {
+	  "matches" : ["*://*.mozilla.org/*"],
+	   "js":["borderify.js"]
+	}   
+	]
+	 
+}
