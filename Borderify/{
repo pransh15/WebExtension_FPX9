@@ -1,0 +1,33 @@
+{
+	"manifest_version":2,
+	"name":"Word Count",
+	"version":"1.0",
+	"description":"count words of selected text",
+	"icons":{
+			"48":"icon.png"
+			}
+	"background":[{
+					"scripts":["bg.js"]
+				}]
+
+}
+
+bg.js
+const countMe=info=>{
+	const selectedText=info.selectionText;
+	const TotalWords=selectedText.trim().split('');
+
+	browser.notifications.create({
+	"type":"basic",
+	"title":"Word Count",
+	"message":'Total words:${totalWords.length}\nTotal Characters:${selectedText.length}
+	});
+	}
+	browser.menus.create({
+	id:"count me",
+	title:"Word Count",
+	contexts:["all"]
+	});
+	browser.menus.onClicked.addListner(countMe),
+
+
