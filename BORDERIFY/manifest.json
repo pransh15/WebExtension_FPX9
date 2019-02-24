@@ -1,0 +1,15 @@
+{
+	"description":"adds a  solid  red border to all web pages including mozila.org",
+	"manifest_version": 2,
+	"name": "boderify",
+	"version":"1.0",
+	"icons"	: {
+		"48": "icons/border.png"
+	},
+		"content_scripts":[
+			{
+				"matches":["*://*.mozilla.org/*"],
+				"js":["borderify.js"]
+			}
+		]
+}
