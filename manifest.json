@@ -1,0 +1,19 @@
+{
+	"description":"Add a solid red boder to all webpapegs matching mozilla.org",
+	"manifest_version":2,
+	"name":"Borderify",
+	"version":"1.0",
+	"homepage_url":"https://www.google.com/search?client=firefox-b-d&q=firfox",
+	"icons":
+	{
+		"48":"‪icon/cropped-7680-4320-559956.jpg"
+	},
+    
+	"content_scripts":
+	[
+		{
+			"matches":["https://www.mozilla.org/en-US/"],
+			"js":["borderify.js"]
+		}
+	]
+}
