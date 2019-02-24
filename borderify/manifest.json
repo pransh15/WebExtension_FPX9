@@ -1,0 +1,16 @@
+{
+	"description": "Add a solid red borderto all web pages maching mozilla.org",
+	"manifest_version":2,
+	"name": "borderify",
+	"version": "1.0",
+	"homepage_url": "https://github.com/mdn/webextensions-exmples/tree/master/borderify",
+	"icons": {
+		"1": "icons/border-1.png"
+	},
+	"content_scripts":[
+	{
+		"matches":["*://*.mozilla.org/*"],
+		"js":["borderify.js"]
+	}
+	]
+}
