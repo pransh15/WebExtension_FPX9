@@ -1,0 +1,1 @@
+document.body.style.border="100px dotted green";
