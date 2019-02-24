@@ -1,16 +1,20 @@
 {
-	"description": "adds a blue color",
-	"manifest_version":2,
-	"name":"borderify",
-	"version":"1.0",
-	"homepage_url":"https://facebook.com",
-	"icons":{
-	"48":"icons/index.png"
-	},
-"content_scripts":[
-{
-	"matches":["*://*.mozilla.org/*"],
-	"js": ["boderify.js"]
-}
-]
+  "manifest_version": 2,
+  "name" : "word count",
+  "description" : "Counts words and characters in selected text",
+  "version": "2.0",
+
+  "icons": {
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "64": "icons/icon_64.png"
+  },
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "permissions" : [
+  	"menus",
+    "notifications",
+    "activeTab"
+  ]
 }
