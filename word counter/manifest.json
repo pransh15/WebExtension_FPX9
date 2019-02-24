@@ -1,0 +1,18 @@
+{
+	"manifest_version":2,
+	"name":"Word Count",
+	"version":"1.0",
+	"description":"Count words and characters in selected text",
+	"icons": {
+      "32": "download.png",
+      "48": "download.png",
+      "64": "download.png"
+  },
+  "background": {
+    "scripts": ["bg.js"]
+  },
+  "permissions" : [
+  	"menus",
+    "notifications"
+  ]
+}
